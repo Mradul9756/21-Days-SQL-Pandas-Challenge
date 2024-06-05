@@ -1,4 +1,4 @@
-# 30-Days-SQL-Pandas-Challenge
+# 21-Days-SQL-Pandas-Challenge
 Confession time: I'm a bit of a data nerd. (Okay, maybe more than a bit.) And like many data folks, I spend a lot of time wrangling data in SQL and Pandas. It can be a grind, but it's also where the magic happens - insights, decisions, real-world impact.
 
 𝗦𝗼, 𝘄𝗵𝘆 𝗻𝗼𝘁 𝗺𝗮𝗸𝗲 𝗶𝘁 𝗳𝘂𝗻? For the next 21 days, I'm inviting you on a journey to level up our SQL and Pandas chops together.
