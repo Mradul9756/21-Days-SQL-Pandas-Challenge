@@ -1,0 +1,13 @@
+Challenge:
+Imagine a Pandas DataFrame (df) with a 'cash_flow' column representing daily cash flow aggregates.
+
+Goal:
+We want to keep only the rows with unique consecutive daily cash flow values. This ensures the model captures trends and predicts future cash flow more accurately.
+
+For example:
+df = pd.DataFrame({'cash_flow': [1000, 1000, 1000, 1500, 1500, 1000, 1200, 1200, 1800, 1800]})
+
+Desired output: [1000, 1500, 1000, 1200, 1800]
+
+solve this using Pandas to ensure the cash flow forecasting model receives accurate information
+Use your Pandas skills to filter the DataFrame df and keep only the rows with unique consecutive cash flow values.
