@@ -3,9 +3,9 @@ You're an analyst at a financial institution. Your task is to identify accounts 
 
 ACCOUNTS						TRANSACTIONS
 
-account_id INT  PRIMARY KEY		         transaction_id INT  PRIMARY KEY,
-customer_id INT,		                  account_id INT,
-account_type VARCHAR,			         transaction_date DATE,
+account_id INT  PRIMARY KEY		        transaction_id INT  PRIMARY KEY,
+customer_id INT,		                account_id INT,
+account_type VARCHAR,			        transaction_date DATE,
 open_date VARCHAR,				amount DECIMAL
 Status VARCHAR,					transaction_type VARCHAR
 
