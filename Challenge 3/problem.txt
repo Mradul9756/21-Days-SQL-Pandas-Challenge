@@ -1,0 +1,27 @@
+Scenario
+You're an analyst at a financial institution. Your task is to identify accounts at risk of churning (closing or becoming inactive) and understand their transaction behavior. You have access to two tables:
+
+ACCOUNTS						          TRANSACTIONS
+
+account_id INT  PRIMARY KEY		transaction_id INT  PRIMARY KEY,
+customer_id INT,					    account_id INT,
+account_type VARCHAR,			    transaction_date DATE,
+open_date VARCHAR,				    amount DECIMAL
+Status VARCHAR,					      transaction_type VARCHAR
+
+Tasks:
+1. Categorize Account Activity: Use ‘CASE WHEN’ to categorize accounts into three groups based on their average monthly transaction count over the past year:
+    * High Activity: Average of 20 or more transactions per month
+    * Medium Activity: Average of 10-19 transactions per month
+    * Low Activity: Average of less than 9 transactions per month
+2. Identify Churn Risk:
+    * Use WHERE to filter for accounts that have been inactive for the past three months (status = 'inactive').
+    * Use HAVING (after aggregating transactions by account) to find accounts in the 'Low Activity' category.
+3. Analyze Transaction Patterns: For the accounts identified as high-risk churn candidates:
+    * Calculate the average transaction amount for each transaction type (deposit vs. withdrawal) over the past six months.
+    * Determine the most frequent transaction type for each account.
+Expected Output:
+Your analysis should provide insights like:
+* The number and percentage of accounts in each activity category.
+* The number and percentage of accounts identified as high-risk churn candidates.
+* A breakdown of average transaction amounts and most frequent transaction types for high-risk accounts.
