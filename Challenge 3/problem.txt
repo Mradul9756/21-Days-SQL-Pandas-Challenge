@@ -1,7 +1,7 @@
 Scenario
 You're an analyst at a financial institution. Your task is to identify accounts at risk of churning (closing or becoming inactive) and understand their transaction behavior. You have access to two tables:
 
-ACCOUNTS				TRANSACTIONS
+ACCOUNTS				   TRANSACTIONS
 
 account_id INT  PRIMARY KEY		        transaction_id INT  PRIMARY KEY,
 customer_id INT,		                account_id INT,
