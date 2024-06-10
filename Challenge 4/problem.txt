@@ -1,0 +1,11 @@
+Imaging you've been handed a dataset where:
+
+-> Dates are stored as strings (e.g., '2024-06-09')
+-> Numerical values are mixed with text (e.g., '42 items')
+-> Booleans are represented as 0s and 1s
+
+and your task is to transform this messy data into a clean, usable format.
+
+Tasks:
+-> SQL: Write a query to convert date strings to DATE format, extract numbers from mixed columns, and turn 0/1 values into TRUE/FALSE.
+-> Pandas: Replicate your SQL solution using Pandas DataFrames and appropriate type conversion methods.
