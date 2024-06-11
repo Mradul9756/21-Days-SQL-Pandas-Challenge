@@ -1,0 +1,13 @@
+A financial scenario (Asked in a Chime's technical interview):
+
+you're working with a transactional data. They have a large fact table called FACT_TRANSACTIONS that's growing rapidly. The company wants to improve query performance on this table.
+
+The Question:
+
+Currently, the FACT_TRANSACTIONS table includes a column called transaction_category_name. This column is causing performance issues because it leads to large text comparisons in queries.
+
+Now try to propose a solution using STAR schema principles to improve query performance on this table in Snowflake. Write the SQL statements necessary to implement your solution.
+
+Hint: Think about the features of a Fact Table?
+
+I have added more hints in my linkedIn Post here: 
