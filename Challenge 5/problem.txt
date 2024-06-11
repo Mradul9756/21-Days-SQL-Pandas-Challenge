@@ -10,4 +10,4 @@ Now try to propose a solution using STAR schema principles to improve query perf
 
 Hint: Think about the features of a Fact Table?
 
-I have added more hints in my linkedIn Post here: 
+I have added more hints in my linkedIn Post here: https://www.linkedin.com/feed/update/urn:li:activity:7206324368430227459/
