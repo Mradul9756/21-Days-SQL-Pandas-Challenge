@@ -1,0 +1,23 @@
+You have a "web_events" table:
+
+event_id INT PRIMARY KEY,
+user_id INT,
+timestamp TIMESTAMP,
+event_type VARCHAR(50), 
+page_url VARCHAR(255)
+
+Each row track a user interaction (page views, clicks, etc.).
+
+End Goal:
+Find users who completed this specific sequence of events:
+-> Viewed the homepage
+-> Viewed a product page
+-> Added an item to their cart
+
+Strategy:
+-> CTE: Create a CTE to rank each user's events by timestamp.
+-> Self-JOIN: Join the CTE to itself, matching on user_id and ensuring each subsequent event is one rank higher.
+-> Filter: Keep only rows where the event sequence matches our target pattern (homepage view -> product view -> add to cart).
+
+Result:
+A result set showing the user_ids who completed the sequence, along with the timestamps of each event.
