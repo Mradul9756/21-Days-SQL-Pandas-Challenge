@@ -1,1 +1,17 @@
-TRY HARDER LOL!
+TABLE 1: DUD
+number
+1
+1
+NULL
+
+TABLE 2: DUD2
+number
+1
+NULL
+1
+
+What will the output be for each of these JOINs?
+LEFT JOIN
+RIGHT JOIN
+INNER JOIN
+FULL JOIN
