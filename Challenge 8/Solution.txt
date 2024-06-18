@@ -1,0 +1,7 @@
+select e.*, d.avg_dep_salary
+from emp e
+inner Join
+(select dept_id, avg(salary) as avg_dept_salary
+from emp
+group by dept_id ) d on d.dept_id = e.dept_id
+where e.salary > d.avg_dept_salary
